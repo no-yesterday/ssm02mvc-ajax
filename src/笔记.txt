@@ -6,3 +6,15 @@
 3.springMVC 包含哪些学习内容
 3.1 单体应用中： 要学的有 ，如何查找jsp ，如何 携带数据跳转到前端。前端jsp 的jstl/el 表达式的shiyong
 3.2 前后端分类中： 要学的有，如何 给后台返回json 数据，如何接收 ajax 的多种类型的参数，前端jquery 和 ajax
+
+4.如何学习？ 先学 如何找jsp   127:8080/xx.jsp
+
+5.restFul 风格 是 对应 增删改查的 get---查    post---增加    delete---删除    put---改
+    其实就是 觉得url 中， 写问号  这样传参数 太难看了 规范一下
+    http协议：  之前只学习2
+
+    Get 请求 http://www.baidu.com?keyWord=吴&&newTitle=在哪
+    Post 请求 http://www.baidu.com forData keyWord:吴 newTitle 在哪
+    以上就是我们所学的 get 和 post 协议请求
+
+    get 查询单个 Get 请求 http://baidu.com

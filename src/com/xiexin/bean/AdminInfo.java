@@ -2,7 +2,9 @@ package com.xiexin.bean;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 public class AdminInfo {
     private String adminName;
@@ -10,6 +12,8 @@ public class AdminInfo {
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date adminTime;
     private String adminPwd;
+    private List<Lover> loverList;
+    private Integer[] aiHao; //1.写代码 2.看书 3.读报纸
 
     @Override
     public String toString() {
@@ -17,7 +21,25 @@ public class AdminInfo {
                 "adminName='" + adminName + '\'' +
                 ", adminTime=" + adminTime +
                 ", adminPwd='" + adminPwd + '\'' +
+                ", loverList=" + loverList +
+                ", aiHao=" + Arrays.toString(aiHao) +
                 '}';
+    }
+
+    public Integer[] getAiHao() {
+        return aiHao;
+    }
+
+    public void setAiHao(Integer[] aiHao) {
+        this.aiHao = aiHao;
+    }
+
+    public List<Lover> getLoverList() {
+        return loverList;
+    }
+
+    public void setLoverList(List<Lover> loverList) {
+        this.loverList = loverList;
     }
 
     public String getAdminName() {

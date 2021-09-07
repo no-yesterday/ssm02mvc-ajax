@@ -57,6 +57,45 @@
                 </div>
 
                 <div class="layui-form-item">
+                    <label class="layui-form-label">单选框</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="sex" value="男" title="男" checked="">
+                        <input type="radio" name="sex" value="女" title="女">
+                        <%--<input type="radio" name="sex" value="禁" title="禁用" disabled="">--%>
+                    </div>
+                </div>
+
+                <div class="layui-form-item" pane="">
+                    <label class="layui-form-label">爱好</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="like1[write]" lay-skin="primary" title="写作" checked="">
+                        <input type="checkbox" name="like1[read]" lay-skin="primary" title="阅读">
+                        <input type="checkbox" name="like1[game]" lay-skin="primary" title="游戏">
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">就业城市</label>
+                    <div class="layui-input-inline">
+                        <select name="city">
+                            <option value="">请选择就业城市</option>
+                            <option value="杭州">杭州</option>
+                            <option value="深圳">深圳</option>
+                            <option value="北京">北京</option>
+                            <option value="上海">上海</option>
+                            <option value="广州">广州</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">是否专升本</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="close" lay-skin="switch" lay-text="是|否">
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
                     <div class="layui-input-block">
                         <button type="submit" class="layui-btn" lay-submit="" lay-filter="regBtn">立即注册</button>
                         <%--<button type="reset" class="layui-btn layui-btn-primary">重置</button>--%>
